@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.lugar {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lugar img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.lugar div {
+    flex-basis: 45%;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .lugar div {
+        flex-basis: 100%;
+    }
+}
+
+/* Estilos para tabletas (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .lugar div {
+        flex-basis: 48%;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para monitores grandes */
+@media (min-width: 901px) {
+    nav a {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .lugar div {
+        flex-basis: 45%;
+    }
+}
